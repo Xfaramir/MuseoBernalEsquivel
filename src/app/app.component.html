@@ -1,10 +1,9 @@
-<div>Welcome</div>
+<div>
+  <app-auth></app-auth>
+</div>
+
 <div *ngIf="afAuth.auth.currentUser">
   <h1>You're logged in</h1>
 </div>
 
-<div *ngIf="!afAuth.auth.currentUser">
-  <h1>Logged Out</h1>
-  <firebase-ui></firebase-ui>
-</div>
 <router-outlet></router-outlet>

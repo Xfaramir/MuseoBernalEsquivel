@@ -6,8 +6,7 @@ import { AppComponent } from "./app.component";
 
 //Custom Modules
 import { CoreModule } from "./modules/core/core.module";
-import { FirebaseUIModule } from "firebaseui-angular";
-import { firebaseUiAuthConfig } from "../app/modules/core/conf";
+import { AuthModule } from "./modules/auth/auth.module";
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,7 +15,7 @@ import { firebaseUiAuthConfig } from "../app/modules/core/conf";
     AppRoutingModule,
     FormsModule,
     CoreModule,
-    FirebaseUIModule.forRoot(firebaseUiAuthConfig)
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

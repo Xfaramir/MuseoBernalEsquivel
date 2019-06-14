@@ -21,5 +21,6 @@ export const firebaseUiAuthConfig: firebaseui.auth.Config = {
   ],
   tosUrl: "<your-tos-link>",
   privacyPolicyUrl: "<your-privacyPolicyUrl-link>",
-  credentialHelper: firebaseui.auth.CredentialHelper.ACCOUNT_CHOOSER_COM
+  credentialHelper: firebaseui.auth.CredentialHelper.ACCOUNT_CHOOSER_COM,
+  
 };
