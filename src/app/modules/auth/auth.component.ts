@@ -33,9 +33,5 @@ export class AuthComponent implements OnInit {
     console.log(errorData.code);
     console.log(errorData.credential);
   }
-  login() {}
-
-  logout() {
-    this.afAuth.auth.signOut();
-  }
+  
 }

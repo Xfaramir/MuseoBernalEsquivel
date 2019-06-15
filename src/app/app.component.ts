@@ -8,7 +8,8 @@ import { AngularFireAuth } from "@angular/fire/auth";
 })
 export class AppComponent {
   title = "museobernalesquivel";
-  constructor(public afAuth: AngularFireAuth) {
-    
+  constructor(public afAuth: AngularFireAuth) {}
+  logout() {
+    this.afAuth.auth.signOut();
   }
 }
