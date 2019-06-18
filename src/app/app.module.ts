@@ -7,6 +7,7 @@ import { AppComponent } from "./app.component";
 //Custom Modules
 import { CoreModule } from "./modules/core/core.module";
 import { AuthModule } from "./modules/auth/auth.module";
+import { HomeModule } from "./modules/home/home.module";
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,7 +16,8 @@ import { AuthModule } from "./modules/auth/auth.module";
     AppRoutingModule,
     FormsModule,
     CoreModule,
-    AuthModule
+    AuthModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
